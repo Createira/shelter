@@ -353,13 +353,8 @@ p {
 .btn--md {
     margin-top: 24px;
 
-    font-family: Georgia, serif;
-    font-size: 17px;
-    padding: 18px 45px;
     background-color: #fff;
     border: 2px solid #f1cdb3;
-    outline: none;
-    border-radius: 50px;
 
     position: relative;
     left: 50%;
@@ -369,8 +364,6 @@ p {
 .btn--md--gallery {
     margin-top: 24px;
 
-    font-family: Georgia, serif;
-    font-size: 17px;
     padding: 15px 45px;
     background-color: #fff;
     border: 2px solid #f1cdb3;
@@ -384,22 +377,18 @@ p {
 
 .btn--md:hover {
     background-color: #f1cdb3;
+    cursor: pointer;
 }
 
 .btn--md--gallery:hover {
     background-color: #f1cdb3;
+    cursor: pointer;
 }
 
 .btn--big {
-    margin-top: 65px;
-    margin-bottom: 60px;
+    margin-top: 40px;
 
-    font-family: Georgia, serif;
-    font-size: 17px;
     padding: 15px 55px;
-    background-color: #f1cdb3;
-    border: none;
-    outline: none;
     border-radius: 50px;
 
     position: relative;
@@ -421,8 +410,6 @@ p {
     padding: 16px 20px;
     background-color: #fafafa;
     border: 2px solid #f1cdb3;
-    outline: none;
-    border-radius: 50px;
 
     position: absolute;
     top: 260px;
@@ -691,7 +678,7 @@ p {
 
 .footer__item {
     width: 250px;
-    height: 290px;
+    height: 280px;
 
     margin-top: 80px;
 }
