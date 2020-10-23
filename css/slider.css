@@ -22,12 +22,13 @@
 
 .slick-arrow:hover {
     background-color: #f1cdb3;
+    cursor: pointer;
 }
 
 .slick-prev {
     background: 50% 50% url(/img/arrow-left.svg) no-repeat;
     background-size: 25px;
-    
+
     position: absolute;
     top: 260px;
     left: -140px;

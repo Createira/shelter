@@ -875,6 +875,10 @@ p {
         background-size: cover;
         -webkit-background-size: cover;
     }
+
+    .help {
+        width: 100%;
+    }
 }
 
 
