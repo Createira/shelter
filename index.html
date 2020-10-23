@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
     <title>Pet's shelter</title>
     
@@ -75,7 +76,6 @@
 
 
     <section class="pets">
-        <div class="container">
             <header class="section__title section__title--md">
                 <h2>Our friends who <br> are looking for a house
                 </h2>
@@ -99,18 +99,26 @@
                     <button class="btn btn--md" data-modal="#modal_project_3">Learn More</button>
                 </div>
 
-                <button class="btn btn--round-left">
-                    <img class="arrow-left" src="/img/long-arrow-alt-left-solid.svg" width="17px" height="20px" alt="prev">
-                </button>
+                <div class="pets__item">
+                    <img class="pets__photo" src="/img/pet/9.jpg" alt="dog">
+                    <div class="pets__name">Princess</div>
+                    <button class="btn btn--md" data-modal="#modal_project_3">Learn More</button>
+                </div>
 
-                <button class="btn btn--round-right">
-                    <img class="arrow-right" src="/img/long-arrow-alt-right-solid.svg" width="17px" height="20px"  alt="next">
-                </button>
+                <div class="pets__item">
+                    <img class="pets__photo" src="/img/pet/10.jpg" alt="dog">
+                    <div class="pets__name">Puffy</div>
+                    <button class="btn btn--md" data-modal="#modal_project_3">Learn More</button>
+                </div>
 
+                <div class="pets__item">
+                    <img class="pets__photo" src="/img/pet/11.jpg" alt="dog">
+                    <div class="pets__name">Browny</div>
+                    <button class="btn btn--md" data-modal="#modal_project_3">Learn More</button>
+                </div>
             </div> <!-- /.pets__inner -->
 
             <button class="btn btn--big">Get to know the rest</button>
-        </div> <!-- /.container -->
     </section> <!-- /.pets -->
 
     <section class="help">
@@ -380,6 +388,7 @@
     </div><!-- /.modal -->
 
     <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/slick.min.js"></script>
     <script src="/js/app.js"></script>
 
 </body>

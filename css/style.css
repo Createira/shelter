@@ -152,8 +152,8 @@ p {
     cursor: pointer;
 
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 75px;
+    right: 40px;
     z-index: 1;
 }
 
@@ -220,7 +220,7 @@ p {
     width: 100%;
     height: 100vh;
 
-    background: url(/img/intro.jpg) center no-repeat;
+    background: url(/img/intro-xl.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
@@ -315,7 +315,7 @@ p {
     transform: translate(-50%, 0);
 }
 
-.btn--md--gallery {
+.btn--gallery {
     margin-top: 24px;
 
     padding: 15px 45px;
@@ -334,7 +334,7 @@ p {
     cursor: pointer;
 }
 
-.btn--md--gallery:hover {
+.btn--gallery:hover {
     background-color: #f1cdb3;
     cursor: pointer;
 }
@@ -356,42 +356,6 @@ p {
 
 .btn--big--gallery:hover {
     background-color: #fddcc4;
-}
-
-.btn--round-right{
-    font-family: Georgia, serif;
-    font-size: 17px;
-    padding: 16px 20px;
-    background-color: #fafafa;
-    border: 2px solid #f1cdb3;
-
-    position: absolute;
-    top: 260px;
-    right: -120px;
-    z-index: 1000;
-}
-
-.btn--round-left {
-    font-family: Georgia, serif;
-    font-size: 17px;
-    padding: 16px 20px;
-    background-color: #fafafa;
-    border: 2px solid #f1cdb3;
-    outline: none;
-    border-radius: 50px;
-
-    position: absolute;
-    top: 260px;
-    left: -120px;
-    z-index: 1000;
-}
-
-.btn--round-right:hover {
-    background-color: #f1cdb3;
-}
-
-.btn--round-left:hover {
-    background-color: #f1cdb3;
 }
 
 /*====About====*/
@@ -426,7 +390,7 @@ p {
 
 .pets__inner {
     margin: 0 auto;
-    width: 900px;
+    width: 912px;
     display: flex;
     justify-content: space-around;
 
@@ -435,9 +399,12 @@ p {
 
 .pets__item {
     margin-top: 75px;
+    margin-left: 14px;
+    margin-right: 9px;
     width: 270px;
     height: 425px;
     border-radius: 10px;
+    outline: none;
 
     background-color: #fff;
 }
@@ -460,7 +427,8 @@ p {
     color: #545454;
 }
 
-.pets--gallery {
+/*====Gallery====*/
+.gallery {
     width: 100%;
     height: 1270px;
     background-color: #fafafa;
@@ -468,7 +436,7 @@ p {
     position: relative;
 }
 
-.pets__inner--gallery {
+.gallery__inner {
     margin: 0 auto;
     width: 1270px;
     display: flex;
@@ -476,7 +444,7 @@ p {
     justify-content: space-between;
 }
 
-.pets__item--gallery {
+.gallery__item {
     margin-top: 75px;
     width: 270px;
     height: 425px;
@@ -487,17 +455,17 @@ p {
     background-color: #fff;
 }
 
-.pets__item--gallery:hover {
+.gallery__item:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
 }
 
-.pets__photo--gallery {
+.gallery__photo {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.pets__name--gallery {
+.gallery__name {
     margin-top: 30px;
     text-align: center;
     font-family: Georgia, serif;
@@ -516,6 +484,7 @@ p {
     max-width: 1170px;
 
     margin-top: 70px;
+    margin-bottom: 30px;
 
     display: flex;
     flex-flow: row wrap;
@@ -846,3 +815,69 @@ p {
     content: "•";
     padding-right: 10px;
 }
+
+/*====Media====*/
+/* Extra Large (xl) */
+@media (max-width: 1280px) { 
+
+}
+
+/* Large (lg) */
+@media (max-width: 1024px) { 
+
+}
+
+/* Medium (md) */
+@media (max-width: 768px) { 
+    /* ===Nav=== */
+    .nav {
+        display: none;
+        width: 100%;
+    
+        position: absolute;
+        top: 51px;
+        left: 0;
+        z-index: 1000;
+        
+        background-color: #df8fc5;
+    }
+        
+    .nav.active {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+        
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+        
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/* Small (sm) */
+@media (max-width: 640px) { 
+    .intro {
+        background: url(/img/intro-s.jpg) center no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+}
+
+/* Extra Small (xs) */
+@media (max-width: 320px) { 
+    .intro {
+        background: url(/img/intro-xs.jpg) center no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+}
+
+
+
+
+

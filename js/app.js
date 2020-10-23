@@ -16,6 +16,20 @@ $("[data-collapse]").on("click", function(event) {
     $this.toggleClass("active");
 });
 
+/* Slider */
+$(document).ready(function(){
+    $('.pets__inner').slick({
+        arrows: true,
+        dots: false,
+        adaptiveHeight: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        speed: 1000,
+        draggable: false,
+        
+    });
+});
+
 /* Modal*/
 const modalCall = $("[data-modal]");
 const modalClose = $("[data-close]");
