@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
@@ -10,15 +11,14 @@
     
 </head>
 <body>
+
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    Cozy House
-                    <div class="header__subtitle">
-                        Shelter for pets in Boston
-                    </div> <!-- /.header__subtitle -->
-                </div> <!-- /.header__logo -->
+                    <a class="logo__link" href="#">Cozy House</a>
+                    <div class="logo__subtitle">Shelter for pets in Boston</div>
+                </div>
 
                 <nav class="nav">
                     <a class="nav__link" href="#">About the shelter</a>
@@ -27,46 +27,38 @@
                     <a class="nav__link" href="#">Contacts</a>
                 </nav>
 
-                <button class="nav-toggle" id="nav_toggle" type="button">
-                    <span class="nav-toggle__item">Menu</span>
-                </button>
-            </div> <!-- /.header__inner -->
-        </div> <!-- /.container -->
-    </header>
+                <button class="nav-toggle"></button>
+            </div><!-- /.header__inner -->
+        </div><!-- /.container -->
+    </header><!-- /.header -->
 
-
-    <div class="intro">
+    <section class="intro">
         <div class="container">
-            <section class="section">
-                <div class="section__title">
-                    <h2>Not only people need a house</h2>
-                </div>
-                <div class="section__text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure iste quos, dolore quae sint dolores eos similique nostrum labore, architecto deleniti fuga laboriosam sit tempore! Harum sed non velit laborum!</p>
-                </div>
+            <header class="section__inner">
+                    <h2 class="section__title">Not only people need a house</h2>
+                    <p class="section__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure iste quos, dolore quae sint dolores eos similique nostrum labore, architecto deleniti fuga laboriosam sit tempore! Harum sed non velit laborum!</p>
 
                 <button class="btn">Make a friend</button>
-            </section>
-        </div> <!-- /.container -->
-    </div> <!-- /.intro -->
-
-    
+            </header>
+        </div><!-- /.container -->
+    </section><!-- /.intro -->
 
     <div class="about">
         <div class="container">
             <div class="about__inner">
                 <div class="about__image">
-                    <img src="/img/about.jpg" alt="dog and cat">
+                    <img  src="/img/about.jpg" alt="dog and cat">
                 </div>
 
-                <section class="section section--black">
-                    <header class="section__title section__title--black">
+                <section class="about__info">
+                    <div class="about__title">
                         <h2>About the shelter “Cozy House”</h2>
-                    </header>
-                    <div class="section__text section__text--black">
+                    </div>
+
+                    <div class="about__text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
                     </div>
-                    <div class="section__text section__text--black">
+                    <div class="about__text">                    
                         <p>Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo.Praesent mattis nibh quis ultrices pharetra. Morbi tempus at ante sit amet tristique. Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim lorem. Sed at ligula et sem mattis gravida ac vel erat.</p>
                     </div>
                 </section>
@@ -74,146 +66,144 @@
         </div> <!-- /.container -->
     </div> <!-- /.about -->
 
+<div class="pets">
+            <h2 class="pets__title">Our friends who <br> are looking for a house
+            </h2>
+        <div class="pets__inner">
+            <div class="pets__item">
+                <img class="pets__photo" src="/img/pet/1.jpg" alt="cat">
+                <div class="pets__name">Katrine</div>
+                <button class="btn btn--md" data-modal="#modal_project_1">Learn More</button>
+            </div>
 
-    <section class="pets">
-            <header class="section__title section__title--md">
-                <h2>Our friends who <br> are looking for a house
-                </h2>
-            </header>
-            <div class="pets__inner">
-                <div class="pets__item">
-                    <img class="pets__photo" src="/img/pet/1.jpg" alt="cat">
-                    <div class="pets__name">Katrine</div>
-                    <button class="btn btn--md" data-modal="#modal_project_1">Learn More</button>
+            <div class="pets__item">
+                <img class="pets__photo" src="/img/pet/2.jpg" alt="dog">
+                <div class="pets__name">Jennifer</div>
+                <button class="btn btn--md" data-modal="#modal_project_2">Learn More</button>
+            </div>
+
+            <div class="pets__item">
+                <img class="pets__photo" src="/img/pet/3.jpg" alt="dog">
+                <div class="pets__name">Woody</div>
+                <button class="btn btn--md" data-modal="#modal_project_3">Learn More</button>
+            </div>
+
+            <div class="pets__item">
+                <img class="pets__photo" src="/img/pet/9.jpg" alt="dog">
+                <div class="pets__name">Princess</div>
+                <button class="btn btn--md" data-modal="#modal_project_9">Learn More</button>
+            </div>
+
+            <div class="pets__item">
+                <img class="pets__photo" src="/img/pet/10.jpg" alt="dog">
+                <div class="pets__name">Puffy</div>
+                <button class="btn btn--md" data-modal="#modal_project_10">Learn More</button>
+            </div>
+
+            <div class="pets__item">
+                <img class="pets__photo" src="/img/pet/11.jpg" alt="dog">
+                <div class="pets__name">Browny</div>
+                <button class="btn btn--md" data-modal="#modal_project_11">Learn More</button>
+            </div>
+        </div> <!-- /.pets__inner -->
+
+        <div class="pets__swipe-icon">
+            <img src="/img/swipe-icon.jpg" alt="swipe-icon">
+        </div>
+
+        <a href="/pets.html" class="btn btn--big">Get to know the rest</a>
+</div> <!-- /.pets -->
+
+<section class="help">
+    <div class="container">
+        <header class="help__title">
+            <h2>Than you can help <br> our shelter
+            </h2>
+        </header>
+
+        <div class="help__inner">
+            <div class="help__item">
+                <img class="help__icon" src="/img/help/1.jpg" alt="Pet food">
+
+               <div class="help__subtitle"> 
+                   <h3>Pet food</h3>
+               </div>
+            </div>
+
+            <div class="help__item">
+                <img class="help__icon" src="/img/help/2.jpg" alt="Transportation">
+
+                <div class="help__subtitle"> 
+                   <h3>Transportation</h3>
+               </div>
+            </div>
+
+            <div class="help__item">
+                <img class="help__icon" src="/img/help/3.jpg" alt="Toys">
+                
+                <div class="help__subtitle"> 
+                    <h3>Toys</h3>
                 </div>
+            </div>
 
-                <div class="pets__item">
-                    <img class="pets__photo" src="/img/pet/2.jpg" alt="dog">
-                    <div class="pets__name">Jennifer</div>
-                    <button class="btn btn--md" data-modal="#modal_project_2">Learn More</button>
-                </div>
+            <div class="help__item">
+                <img class="help__icon" src="/img/help/4.jpg" alt="Bowls and cups">
 
-                <div class="pets__item">
-                    <img class="pets__photo" src="/img/pet/3.jpg" alt="dog">
-                    <div class="pets__name">Woody</div>
-                    <button class="btn btn--md" data-modal="#modal_project_3">Learn More</button>
-                </div>
+                <div class="help__subtitle"> 
+                   <h3>Bowls and cups</h3>
+               </div>
+            </div>
 
-                <div class="pets__item">
-                    <img class="pets__photo" src="/img/pet/9.jpg" alt="dog">
-                    <div class="pets__name">Princess</div>
-                    <button class="btn btn--md" data-modal="#modal_project_3">Learn More</button>
-                </div>
+            <div class="help__item">
+                <img class="help__icon" src="/img/help/5.jpg" alt="Shampoos">
 
-                <div class="pets__item">
-                    <img class="pets__photo" src="/img/pet/10.jpg" alt="dog">
-                    <div class="pets__name">Puffy</div>
-                    <button class="btn btn--md" data-modal="#modal_project_3">Learn More</button>
-                </div>
+                <div class="help__subtitle"> 
+                   <h3>Shampoos</h3>
+               </div>
+            </div>
 
-                <div class="pets__item">
-                    <img class="pets__photo" src="/img/pet/11.jpg" alt="dog">
-                    <div class="pets__name">Browny</div>
-                    <button class="btn btn--md" data-modal="#modal_project_3">Learn More</button>
-                </div>
-            </div> <!-- /.pets__inner -->
+            <div class="help__item">
+                <img class="help__icon" src="/img/help/6.jpg" alt="Vitamins">
 
-            <button class="btn btn--big">Get to know the rest</button>
-    </section> <!-- /.pets -->
+                <div class="help__subtitle"> 
+                   <h3>Vitamins</h3>
+               </div>
+            </div>
 
-    <section class="help">
-        <div class="container">
-            <header class="section__title section__title--md">
-                <h2>Than you can help <br> our shelter
-                </h2>
-            </header>
+            <div class="help__item">
+                <img class="help__icon" src="/img/help/7.jpg" alt="Medicines">
 
-            <div class="help__inner">
-                <div class="help__item">
-                    <img class="help__icon" src="/img/help/1.jpg" alt="Pet food">
+                <div class="help__subtitle"> 
+                   <h3>Medicines</h3>
+               </div>
+            </div>
 
-                   <div class="help__subtitle"> 
-                       <h3>Pet food</h3>
-                   </div>
-                </div>
+            <div class="help__item">
+                <img class="help__icon" src="/img/help/8.jpg" alt="Collars / leashes">
 
-                <div class="help__item">
-                    <img class="help__icon" src="/img/help/2.jpg" alt="Transportation">
+                <div class="help__subtitle"> 
+                   <h3>Collars / leashes</h3>
+               </div>
+            </div>
 
-                    <div class="help__subtitle"> 
-                       <h3>Transportation</h3>
-                   </div>
-                </div>
+            <div class="help__item">
+                <img class="help__icon" src="/img/help/9.jpg" alt="Sleeping area">
 
-                <div class="help__item">
-                    <img class="help__icon" src="/img/help/3.jpg" alt="Toys">
-                    
-                    <div class="help__subtitle"> 
-                        <h3>Toys</h3>
-                    </div>
-                </div>
+                <div class="help__subtitle"> 
+                   <h3>Sleeping area</h3>
+               </div>
+            </div>
+        </div><!-- /.help__inner -->
+    </div><!-- /.container -->
+</section><!-- /.help -->
 
-                <div class="help__item">
-                    <img class="help__icon" src="/img/help/4.jpg" alt="Bowls and cups">
-
-                    <div class="help__subtitle"> 
-                       <h3>Bowls and cups</h3>
-                   </div>
-                </div>
-
-                <div class="help__item">
-                    <img class="help__icon" src="/img/help/5.jpg" alt="Shampoos">
-
-                    <div class="help__subtitle"> 
-                       <h3>Shampoos</h3>
-                   </div>
-                </div>
-
-                <div class="help__item">
-                    <img class="help__icon" src="/img/help/6.jpg" alt="Vitamins">
-
-                    <div class="help__subtitle"> 
-                       <h3>Vitamins</h3>
-                   </div>
-                </div>
-
-                <div class="help__item">
-                    <img class="help__icon" src="/img/help/7.jpg" alt="Medicines">
-
-                    <div class="help__subtitle"> 
-                       <h3>Medicines</h3>
-                   </div>
-                </div>
-
-                <div class="help__item">
-                    <img class="help__icon" src="/img/help/8.jpg" alt="Collars / leashes">
-
-                    <div class="help__subtitle"> 
-                       <h3>Collars / leashes</h3>
-                   </div>
-                </div>
-
-                <div class="help__item">
-                    <img class="help__icon" src="/img/help/9.jpg" alt="Sleeping area">
-
-                    <div class="help__subtitle"> 
-                       <h3>Sleeping area</h3>
-                   </div>
-                </div>
-            </div><!-- /.help__inner -->
-
-        </div><!-- /.container -->
-    </section><!-- /.help -->
-
-    <div class="donation">
-            <div class="donation__inner">
-                <div class="donation__title">
-                    <h2>In addition, you <br> can make a donation</h2>
-                </div>
-
-                <div class="donation__subtitle">
-                    <h3>Name of the bank / Type of bank account</h3>
-                </div>
+<div class="donation">
+    <div class="container">
+        <div class="donation__inner">
+                <img class="donation__photo" src="/img/donation.jpg" alt="">
+            <div class="donation__form">
+                <h2 class="donation__title">In addition, you <br> can make a donation</h2>
+                    <h3 class="donation__subtitle">Name of the bank / Type of bank account</h3>
 
                 <div class="donation__account">
                     <img class="donation__icon" src="/img/credit-card-regular.svg" alt="credit-card">
@@ -221,171 +211,283 @@
                     <div class="donation__number">8380 2880 8028 8791 7435</div>
                 </div>
 
-                <p class="donation__text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
-            </div><!-- /.donation__inner -->
-    </div><!-- /.donation -->
+                <p class="donation__text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                </p>
+            </div>
+        </div><!-- /.donation__inner -->
+    </div> <!-- /.container -->
+</div><!-- /.donation -->
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__item">
-                    <div class="footer__title">
-                        For questions and suggestions
-                    </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__item">
+                <h2 class="footer__title">For questions and suggestions</h2>
+                <ul>
+                    <li class="footer__mail">
+                        <img class="footer__mail-icon" src="/img/email.jpg" alt="letter">
+                        email@shelter.com
+                    </li>
+                    <li class="footer__phone">
+                        <img class="footer__phone-icon" src="/img/phone.jpg" alt="phone">
+                        +13 674 567 75 54
+                    </li>
+                </ul>
+            </div>
 
-                    <div class="footer__social-email">
-                        <img src="/img/email.jpg" alt="">
+            <div class="footer__item">
+                <h2 class="footer__title">We are waiting for your visit</h2>
+                <ul>
+                    <li class="footer__address">
+                        <img class="footer__location-icon" src="/img/location.jpg" alt="letter">
+                        Boston, Central Street, 1st
+                    </li>
+                    <li class="footer__address">
+                        <img class="footer__location-icon" src="/img/location.jpg" alt="phone">
+                        London, South Park, 18st
+                    </li>
+                </ul>
+            </div>
 
-                       <div class="footer__email">email@shelter.com</div> 
-                    </div>
+            <img class="footer__photo" src="/img/footer__photo.png" alt="dog">
+        </div><!-- /.footer__inner -->
+    </div><!-- /.container -->
+</footer><!-- /.footer -->
 
-                    <div class="footer__social-phone">
-                        <img src="/img/phone.jpg" alt="">
+<!-- Modal -->
+<div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
 
-                       <div class="footer__phone">+13 674 567 75 54</div> 
-                    </div>
+      <button class="modal__close" type="button" data-close>
+        <i class="fas fa-times"></i>
+      </button>
+    
+      <div class="modal-window">
+          <div class="modal__preview">
+            <img class="modal__photo" src="/img/modal/1.jpg" alt="img">
+          </div>
+
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__name">Katrine</h3>
+                </div>
+                <div class="modal__pet">
+                    <div class="modal__pets-breed">Cat</div> 
+                </div>
+    
+                <div class="modal__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
+                    </p>
                 </div>
 
-                <div class="footer__item">
-                    <div class="footer__title">
-                        We are waiting for your visit
-                    </div>
+                <ul class="modal__info">
+                    <li class="modal__pets-info"><b>Age:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Inoculations:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Diseases:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Parasites:</b>Put the info here</li>
+                </ul>
 
-                    <div class="footer__location-first">
-                        <img src="/img/location.jpg" alt="">
+            </div><!-- /.modal-table__content -->
+        </div><!-- /.modal-table -->
 
-                       <div class="footer__address-first">Boston, Central Street, 1st </div> 
-                    </div>
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
 
-                    <div class="footer__location-second">
-                        <img src="/img/location.jpg" alt="">
+<div class="modal" id="modal_project_2">
+    <div class="modal__dialog">
 
-                       <div class="footer__address-second">London, South Park, 18st</div> 
-                    </div>
+      <button class="modal__close" type="button" data-close>
+        <i class="fas fa-times"></i>
+      </button>
+    
+      <div class="modal-window">
+          <div class="modal__preview">
+            <img class="modal__photo" src="/img/modal/2.jpg" alt="puppy">
+          </div>
+
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__name">Jennifer</h3>
                 </div>
-            </div><!-- /.footer__inner -->
-        </div><!-- /.container -->
-    </footer><!-- /.footer -->
+                <div class="modal__pet">
+                    <div class="modal__pets-breed">Pooch + Labrador</div> 
+                </div>
+    
+                <div class="modal__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
+                    </p>
+                </div>
 
-     <!-- Modal -->
-     <div class="modal" id="modal_project_1">
-        <div class="modal__dialog">
-  
-          <button class="modal__close" type="button" data-close>
-            <i class="fas fa-times"></i>
-          </button>
-        
-          <div class="modal-window">
-              <div class="modal__preview">
-                <img class="modal__photo" src="https://placehold.it/500x470" alt="img">
-              </div>
-  
-                <div class="modal__content">
-                    <div class="modal__header">
-                        <h3 class="modal__name">Katrine</h3>
-                    </div>
-                    <div class="modal__pet">
-                        <div class="modal__pets-breed">Cat</div> 
-                    </div>
-        
-                    <div class="modal__text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
-                        </p>
-                    </div>
+                <ul class="modal__info">
+                    <li class="modal__pets-info"><b>Age:</b> 2 months</li>
+                    <li class="modal__pets-info"><b>Inoculations:</b> none</li>
+                    <li class="modal__pets-info"><b>Diseases:</b> none</li>
+                    <li class="modal__pets-info"><b>Parasites:</b> none</li>
+                </ul>
 
-                    <ul class="modal__info">
-                        <li class="modal__pets-info"><b>Age:</b>Put the info here</li>
-                        <li class="modal__pets-info"><b>Inoculations:</b>Put the info here</li>
-                        <li class="modal__pets-info"><b>Diseases:</b>Put the info here</li>
-                        <li class="modal__pets-info"><b>Parasites:</b>Put the info here</li>
-                    </ul>
+            </div><!-- /.modal-table__content -->
+        </div><!-- /.modal-table -->
 
-                </div><!-- /.modal-table__content -->
-            </div><!-- /.modal-table -->
-  
-        </div><!-- /.modal__dialog -->
-    </div><!-- /.modal -->
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
 
+<div class="modal" id="modal_project_3">
+    <div class="modal__dialog">
 
-    <div class="modal" id="modal_project_2">
-        <div class="modal__dialog">
-  
-          <button class="modal__close" type="button" data-close>
-            <i class="fas fa-times"></i>
-          </button>
-        
-          <div class="modal-window">
-              <div class="modal__preview">
-                <img class="modal__photo" src="/img/modal/2.jpg" alt="img">
-              </div>
-  
-                <div class="modal__content">
-                    <div class="modal__header">
-                        <h3 class="modal__name">Jennifer</h3>
-                    </div>
-                    <div class="modal__pet">
-                        <div class="modal__pets-breed">Pooch + Labrador</div> 
-                    </div>
-        
-                    <div class="modal__text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
-                        </p>
-                    </div>
+      <button class="modal__close" type="button" data-close>
+        <i class="fas fa-times"></i>
+      </button>
+    
+      <div class="modal-window">
+          <div class="modal__preview">
+            <img class="modal__photo" src="/img/modal/3.jpg" alt="img">
+          </div>
 
-                    <ul class="modal__info">
-                        <li class="modal__pets-info"><b>Age:</b> 2 months</li>
-                        <li class="modal__pets-info"><b>Inoculations:</b> none</li>
-                        <li class="modal__pets-info"><b>Diseases:</b> none</li>
-                        <li class="modal__pets-info"><b>Parasites:</b> none</li>
-                    </ul>
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__name">Woody</h3>
+                </div>
+                <div class="modal__pet">
+                    <div class="modal__pets-breed">Dog</div> 
+                </div>
+    
+                <div class="modal__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
+                    </p>
+                </div>
 
-                </div><!-- /.modal-table__content -->
-            </div><!-- /.modal-table -->
-  
-        </div><!-- /.modal__dialog -->
-    </div><!-- /.modal -->
+                <ul class="modal__info">
+                    <li class="modal__pets-info"><b>Age:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Inoculations:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Diseases:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Parasites:</b>Put the info here</li>
+                </ul>
 
+            </div><!-- /.modal-table__content -->
+        </div><!-- /.modal-table -->
 
-     <div class="modal" id="modal_project_3">
-        <div class="modal__dialog">
-  
-          <button class="modal__close" type="button" data-close>
-            <i class="fas fa-times"></i>
-          </button>
-        
-          <div class="modal-window">
-              <div class="modal__preview">
-                <img class="modal__photo" src="https://placehold.it/500x470" alt="img">
-              </div>
-  
-                <div class="modal__content">
-                    <div class="modal__header">
-                        <h3 class="modal__name">Woody</h3>
-                    </div>
-                    <div class="modal__pet">
-                        <div class="modal__pets-breed">Pooch + Labrador</div> 
-                    </div>
-        
-                    <div class="modal__text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
-                        </p>
-                    </div>
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
 
-                    <ul class="modal__info">
-                        <li class="modal__pets-info"><b>Age:</b>Put the info here</li>
-                        <li class="modal__pets-info"><b>Inoculations:</b> Put the info here</li>
-                        <li class="modal__pets-info"><b>Diseases:</b> Put the info here</li>
-                        <li class="modal__pets-info"><b>Parasites:</b> Put the info here</li>
-                    </ul>
+<div class="modal" id="modal_project_9">
+    <div class="modal__dialog">
 
-                </div><!-- /.modal-table__content -->
-            </div><!-- /.modal-table -->
-  
-        </div><!-- /.modal__dialog -->
-    </div><!-- /.modal -->
+      <button class="modal__close" type="button" data-close>
+        <i class="fas fa-times"></i>
+      </button>
+    
+      <div class="modal-window">
+          <div class="modal__preview">
+            <img class="modal__photo" src="https://placehold.it/500x470" alt="img">
+          </div>
+
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__name">Princess</h3>
+                </div>
+                <div class="modal__pet">
+                    <div class="modal__pets-breed">Cat</div> 
+                </div>
+    
+                <div class="modal__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
+                    </p>
+                </div>
+
+                <ul class="modal__info">
+                    <li class="modal__pets-info"><b>Age:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Inoculations:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Diseases:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Parasites:</b>Put the info here</li>
+                </ul>
+
+            </div><!-- /.modal-table__content -->
+        </div><!-- /.modal-table -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_10">
+    <div class="modal__dialog">
+
+      <button class="modal__close" type="button" data-close>
+        <i class="fas fa-times"></i>
+      </button>
+    
+      <div class="modal-window">
+          <div class="modal__preview">
+            <img class="modal__photo" src="https://placehold.it/500x470" alt="img">
+          </div>
+
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__name">Puffy</h3>
+                </div>
+                <div class="modal__pet">
+                    <div class="modal__pets-breed">Dog</div> 
+                </div>
+    
+                <div class="modal__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
+                    </p>
+                </div>
+
+                <ul class="modal__info">
+                    <li class="modal__pets-info"><b>Age:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Inoculations:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Diseases:</b>Put the info here</li>
+                    <li class="modal__pets-info"><b>Parasites:</b>Put the info here</li>
+                </ul>
+
+            </div><!-- /.modal-table__content -->
+        </div><!-- /.modal-table -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modal_project_11">
+    <div class="modal__dialog">
+
+      <button class="modal__close" type="button" data-close>
+        <i class="fas fa-times"></i>
+      </button>
+    
+      <div class="modal-window">
+          <div class="modal__preview">
+            <img class="modal__photo" src="https://placehold.it/500x470" alt="dog">
+          </div>
+
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__name">Browny</h3>
+                </div>
+                <div class="modal__pet">
+                    <div class="modal__pets-breed">Pooch</div> 
+                </div>
+    
+                <div class="modal__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
+                    </p>
+                </div>
+
+                <ul class="modal__info">
+                    <li class="modal__pets-info"><b>Age:</b> 4 months</li>
+                    <li class="modal__pets-info"><b>Inoculations:</b> none</li>
+                    <li class="modal__pets-info"><b>Diseases:</b> none</li>
+                    <li class="modal__pets-info"><b>Parasites:</b> none</li>
+                </ul>
+
+            </div><!-- /.modal-table__content -->
+        </div><!-- /.modal-table -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
 
     <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/slick.min.js"></script>

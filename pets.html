@@ -11,31 +11,27 @@
     <header class="header header--white">
         <div class="container">
             <div class="header__inner header__inner--white">
-                <div class="header__logo header__logo--black">
-                    Cozy House
-                    <div class="header__subtitle header__subtitle--black">
-                        Shelter for pets in Boston
-                    </div> <!-- /.header__subtitle -->
-                </div> <!-- /.header__logo -->
+                <div class="header__logo">
+                    <a class="logo__link--black" href="#">Cozy House</a>
+                    <div class="logo__subtitle logo__subtitle--black">Shelter for pets in Boston</div>
+                </div>
 
                 <nav class="nav nav--black">
-                    <a class="nav__link nav__link--black" href="#" target="_blank">About the shelter</a>
-                    <a class="nav__link nav__link--black" href="/pets.html" target="_blank">Our pets</a>
-                    <a class="nav__link nav__link--black" href="#" target="_blank">To help the shelter</a>
-                    <a class="nav__link nav__link--black" href="#" target="_blank">Contacts</a>
+                    <a class="nav__link nav__link--black" href="#">About the shelter</a>
+                    <a class="nav__link nav__link--black" href="/pets.html">Our pets</a>
+                    <a class="nav__link nav__link--black" href="#">To help the shelter</a>
+                    <a class="nav__link nav__link--black" href="#">Contacts</a>
                 </nav>
 
-                <button class="nav-toggle" id="nav_toggle" type="button">
-                    <span class="nav-toggle__item">Menu</span>
-                </button>
-            </div> <!-- /.header__inner -->
-        </div> <!-- /.container -->
+                <button class="nav-toggle"></button>
+            </div><!-- /.header__inner -->
+        </div><!-- /.container -->
     </header><!-- /.header -->
 
     <section class="gallery">
-            <header class="section__title--md section__title--md--black">
-                <h2>Our friends who <br> are looking for a house
-                </h2>
+            <header class="gallery__title">
+                <h2>Our friends who <br> are looking for a house</h2>
+                <h3 class="gallery__subtitle">*if you want more information about pets, please open the full version</h3>
             </header>
             <div class="gallery__inner">
                 <div class="gallery__item">
@@ -93,43 +89,39 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__item">
-                    <div class="footer__title">
-                        For questions and suggestions
-                    </div>
-
-                    <div class="footer__social-email">
-                        <img src="/img/email.jpg" alt="">
-
-                       <div class="footer__email">email@shelter.com</div> 
-                    </div>
-
-                    <div class="footer__social-phone">
-                        <img src="/img/phone.jpg" alt="">
-
-                       <div class="footer__phone">+13 674 567 75 54</div> 
-                    </div>
+                    <h2 class="footer__title">For questions and suggestions</h2>
+                    <ul>
+                        <li class="footer__mail">
+                            <img class="footer__mail-icon" src="/img/email.jpg" alt="letter">
+                            email@shelter.com
+                        </li>
+                        <li class="footer__phone">
+                            <img class="footer__phone-icon" src="/img/phone.jpg" alt="phone">
+                            +13 674 567 75 54
+                        </li>
+                    </ul>
                 </div>
-
+    
                 <div class="footer__item">
-                    <div class="footer__title">
-                        We are waiting for your visit
-                    </div>
-
-                    <div class="footer__location-first">
-                        <img src="/img/location.jpg" alt="">
-
-                       <div class="footer__address-first">Boston, Central Street, 1st </div> 
-                    </div>
-
-                    <div class="footer__location-second">
-                        <img src="/img/location.jpg" alt="">
-
-                       <div class="footer__address-second">London, South Park, 18st</div> 
-                    </div>
+                    <h2 class="footer__title">We are waiting for your visit</h2>
+                    <ul>
+                        <li class="footer__address">
+                            <img class="footer__location-icon" src="/img/location.jpg" alt="letter">
+                            Boston, Central Street, 1st
+                        </li>
+                        <li class="footer__address">
+                            <img class="footer__location-icon" src="/img/location.jpg" alt="phone">
+                            London, South Park, 18st
+                        </li>
+                    </ul>
                 </div>
+    
+                <img class="footer__photo" src="/img/footer__photo.png" alt="dog">
             </div><!-- /.footer__inner -->
         </div><!-- /.container -->
     </footer><!-- /.footer -->
+    
+    
 
 <!-- Modal -->
 <div class="modal" id="modal_project_1">
@@ -141,7 +133,7 @@
     
       <div class="modal-window">
           <div class="modal__preview">
-            <img class="modal__photo" src="https://placehold.it/500x470" alt="img">
+            <img class="modal__photo" src="/img/modal/1.jpg" alt="img">
           </div>
 
             <div class="modal__content">
@@ -219,7 +211,7 @@
     
       <div class="modal-window">
           <div class="modal__preview">
-            <img class="modal__photo" src="https://placehold.it/500x470" alt="img">
+            <img class="modal__photo" src="/img/modal/3.jpg" alt="img">
           </div>
 
             <div class="modal__content">

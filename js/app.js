@@ -16,7 +16,7 @@ $("[data-collapse]").on("click", function(event) {
     $this.toggleClass("active");
 });
 
-/* Slider */
+/* Slider*/
 $(document).ready(function(){
     $('.pets__inner').slick({
         arrows: true,
@@ -25,10 +25,31 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         speed: 1000,
-        draggable: false,
-        
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+        ]
     });
 });
+
 
 /* Modal*/
 const modalCall = $("[data-modal]");

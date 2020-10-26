@@ -30,8 +30,9 @@
     background-size: 25px;
 
     position: absolute;
-    top: 260px;
-    left: -140px;
+    top: 417px;
+    left: 250px;
+    z-index: 1000;
 }
 
 .slick-next {
@@ -39,7 +40,7 @@
     background-size: 25px;
 
     position: absolute;
-    top: 260px;
-    right: -140px;
+    top: 417px;
+    right: 250px;
     z-index: 1000;
 }
