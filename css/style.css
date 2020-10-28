@@ -43,8 +43,8 @@ p, ul {
 }
 
 .header__inner {
-    min-height: 80px;
-    padding: 0 10px;
+    min-height: 100px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +58,7 @@ p, ul {
     display: block;
 
     font-family: Georgia, serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     text-decoration: none;
     color: #f1cdb3;
@@ -72,6 +72,7 @@ p, ul {
     font-family: Arial, sans-serif;
     font-size: 13px;
     font-weight: 500;
+    letter-spacing: 1.2px;
     color: #fff;
 }
 
@@ -79,11 +80,6 @@ p, ul {
     height: 100px;
 
     position: relative;
-}
-
-.header__inner--white {
-    min-height: 100px;
-    padding: 0 10px;
 }
 
 .logo__link--black {
@@ -94,6 +90,7 @@ p, ul {
 } 
 
 .logo__subtitle--black {
+    letter-spacing: 1.2px;
     color: #545454;
 }
 
@@ -106,7 +103,7 @@ p, ul {
     font-weight: 500;
 
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 0;
 
     background-color: #f1cdb3;
@@ -154,6 +151,7 @@ p, ul {
 .nav__link:last-child {
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.335);
 }
+
 
 /*====Nav-toggle====*/
 .nav-toggle {
@@ -951,6 +949,10 @@ p, ul {
     
     .nav__link--black {
         color: #545454;
+    }
+
+    .nav__link:last-child{
+        box-shadow: none;
     }
 
     .intro {
