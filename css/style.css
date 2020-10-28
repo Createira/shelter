@@ -83,7 +83,7 @@ p, ul {
 
 .header__inner--white {
     min-height: 100px;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .logo__link--black {
@@ -100,15 +100,26 @@ p, ul {
 /*====Navigation====*/
 .nav {
     display: none;
+    width: 100%;
 
     font-family: Arial, sans-serif;
     font-weight: 500;
+
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    background-color: #f1cdb3;
+}
+
+.nav.active {
+    display: block;
 }
 
 .nav__link {
-    margin-left: 40px;
-    padding-top: 18px;
-    color: #cdcdcd;
+    display: block;
+    margin: 0;
+    padding: 8px 20px;
     text-decoration: none;
 
     position: relative;
@@ -140,12 +151,8 @@ p, ul {
     margin-left: 0;
 }
 
-.nav--black {
-    margin-top: 30px;
-}
-
-.nav__link--black {
-    color: #545454;
+.nav__link:last-child {
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.335);
 }
 
 /*====Nav-toggle====*/
@@ -313,6 +320,10 @@ p, ul {
     text-align: center;
 }
 
+.about__text:last-child {
+    margin-bottom: 50px;
+}
+
 /*====Pets====*/
 .pets {
     width: 100%;
@@ -322,8 +333,8 @@ p, ul {
 }
 
 .pets__title {
-    padding-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 30px;
 
     font-size: 30px;
     font-weight: 200;
@@ -702,6 +713,7 @@ p, ul {
 }
 
 .modal__photo {
+    height: 470px;
     top: 0;
     left: 0;
     right: 0;
@@ -905,12 +917,40 @@ p, ul {
 
     .nav {
         display: flex;
-
+        width: initial;
         margin-top: 60px;
+        background-color: transparent;
+        
+        position: static;
+    }
+    
+    .nav__link {
+        margin-left: 40px;
+        padding: 18px 0 0;
+        color: #cdcdcd;
+        text-decoration: none;
+    
+        position: relative;
+    }
+
+    .nav__link:hover:after, .nav__link.active:after {
+        opacity: 1;
+    }
+    
+    .nav__link:first-child {
+        margin-left: 0;
     }
 
     .nav-toggle {
         display: none;
+    }
+
+    .nav--black {
+        margin-top: 30px;
+    }
+    
+    .nav__link--black {
+        color: #545454;
     }
 
     .intro {
