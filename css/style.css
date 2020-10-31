@@ -117,6 +117,10 @@ p, ul {
     display: block;
     margin: 0;
     padding: 8px 20px;
+
+    font-family: Georgia, serif;
+    color: #3b3b3b;
+    font-weight: 600;
     text-decoration: none;
 
     position: relative;
