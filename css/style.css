@@ -222,7 +222,7 @@ p, ul {
 
 /*====Button====*/
 .btn {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding: 12px 40px;
     font-family: inherit;
     font-size: 15px;
@@ -249,7 +249,7 @@ p, ul {
 
 .btn--big {
     display: inline-block;
-    margin-top: 20px;
+    margin: 20px 0 50px 0;
     padding: 15px 55px;
 
     color: #292929;
@@ -294,10 +294,11 @@ p, ul {
 }
 
 .about__inner {
+    width: 100%;
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
 }
 
 .about__title {
@@ -333,7 +334,7 @@ p, ul {
 }
 
 .pets__title {
-    padding-top: 30px;
+    padding-top: 50px;
     margin-bottom: 30px;
 
     font-size: 30px;
@@ -382,8 +383,8 @@ p, ul {
 
 .pets__swipe-icon {
     position: absolute;
-    bottom: 110px;
-    left: 50px;
+    bottom: 130px;
+    left: 30px;
     z-index: 1000;
 }
 
@@ -394,7 +395,7 @@ p, ul {
 }
 
 .help__title {
-    padding-top: 50px;
+    padding-top: 40px;
 
     font-size: 25px;
     font-weight: 200;
@@ -416,7 +417,7 @@ p, ul {
 
 .help__item {
     width: 200px;
-    height: 170px;
+    height: 150px;
     margin: 0 12px;
 
     flex: 0 1 auto;
@@ -445,6 +446,7 @@ p, ul {
 }
 
 .donation__inner {
+    padding-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -759,7 +761,7 @@ p, ul {
 }
 
 .modal__info {
-    padding: 0;
+    padding-top: 20px;
 }
 
 .modal__pets-info {
@@ -819,8 +821,8 @@ p, ul {
 
     .pets__swipe-icon {
         position: absolute;
-        bottom: 100px;
-        left: 15px;
+        bottom: 130px;
+        left: 30px;
         z-index: 1000;
     }
 
@@ -872,8 +874,8 @@ p, ul {
 
     .pets__swipe-icon {
         position: absolute;
-        bottom: 115px;
-        left: 55px;
+        bottom: 140px;
+        left: 90px;
         z-index: 1000;
     }
 
@@ -1064,8 +1066,8 @@ p, ul {
 
     .pets__swipe-icon {
         position: absolute;
-        bottom: 270px;
-        left: 40px;
+        top: 250px;
+        left: 50px;
         z-index: 1000;
     }
 
@@ -1090,8 +1092,12 @@ p, ul {
         max-width: 1200px;
     }
 
+    .help__inner {
+        padding-bottom: 40px;
+    }
+
     .donation {
-        padding-top: 60px;
+        padding-top: 40px;
         padding-bottom: 60px;
     }
 
