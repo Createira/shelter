@@ -24,7 +24,7 @@ $(document).ready(function(){
         adaptiveHeight: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        speed: 1000,
+        speed: 700,
         responsive: [
             {
                 breakpoint: 1400,

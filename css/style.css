@@ -361,6 +361,7 @@ p, ul {
     outline: none;
 
     background-color: #fff;
+    position: relative;
 }
 
 .pets__item:hover {
@@ -383,8 +384,8 @@ p, ul {
 
 .pets__swipe-icon {
     position: absolute;
-    bottom: 130px;
-    left: 30px;
+    top: 0;
+    left: 0;
     z-index: 1000;
 }
 
@@ -821,8 +822,8 @@ p, ul {
 
     .pets__swipe-icon {
         position: absolute;
-        bottom: 130px;
-        left: 30px;
+        top: 0;
+        left: 0;
         z-index: 1000;
     }
 
@@ -874,8 +875,8 @@ p, ul {
 
     .pets__swipe-icon {
         position: absolute;
-        bottom: 140px;
-        left: 90px;
+        top: 0;
+        left: 0;
         z-index: 1000;
     }
 
@@ -1066,8 +1067,8 @@ p, ul {
 
     .pets__swipe-icon {
         position: absolute;
-        top: 250px;
-        left: 50px;
+        top: 0;
+        left: 0;
         z-index: 1000;
     }
 
