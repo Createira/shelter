@@ -44,3 +44,30 @@
     right: 250px;
     z-index: 1000;
 }
+
+/* Точки */
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li {
+    margin: 10px 10px;
+    list-style: none;
+}
+
+.slick-dots li.slick-active button{
+    border: 2px solid #F1CDB3;
+}
+
+.slick-dots button {
+    width: 20px;
+    height: 20px;
+
+    font-size: 0;
+    background-color: #fff;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 50%;
+    outline: none;
+}
