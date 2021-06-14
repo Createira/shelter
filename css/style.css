@@ -34,7 +34,7 @@ p, ul {
     padding: 0;
 }
 
-/*====Header====*/
+/*== Header ==*/
 .header {
     width: 100%;
     height: 100px;
@@ -94,7 +94,7 @@ p, ul {
     color: #545454;
 }
 
-/*====Navigation====*/
+/*== Navigation ==*/
 .nav {
     display: none;
     width: 100%;
@@ -147,7 +147,7 @@ p, ul {
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.335);
 }
 
-/*====Nav-toggle====*/
+/*== Nav-toggle ==*/
 .nav-toggle {
     width: 40px;
     height: 40px;
@@ -174,7 +174,7 @@ p, ul {
     background-color: #fddcc4;
 }
 
-/*====Intro=====*/
+/*== Intro ==*/
 .intro {
     height: 100vh;
     background: url(/img/intro-xs.jpg) center no-repeat;
@@ -182,7 +182,7 @@ p, ul {
     -webkit-background-size: cover;
 }
 
-/*====Section====*/
+/*== Section ==*/
 .intro__inner {
     margin: 0 auto;
     position: absolute;
@@ -209,7 +209,7 @@ p, ul {
     text-align: center;
 }
 
-/*====Button====*/
+/*== Button ==*/
 .btn {
     margin-bottom: 30px;
     padding: 12px 40px;
@@ -231,7 +231,6 @@ p, ul {
 }
 
 .btn--md {
-    display: none;
     margin-top: 30px;
 }
 
@@ -251,7 +250,6 @@ p, ul {
 }
 
 .btn--gallery {
-    display: none;
     margin-top: 24px;
     padding: 15px 45px;
     background-color: #fff;
@@ -268,7 +266,7 @@ p, ul {
     cursor: pointer;
 }
 
-/*====About====*/
+/*== About ==*/
 .about {
     width: 100%;
     display: flex;
@@ -306,7 +304,7 @@ p, ul {
     margin-bottom: 50px;
 }
 
-/*====Pets====*/
+/*== Pets ==*/
 .pets {
     width: 100%;
     background-color: #f6f6f6;  
@@ -334,7 +332,6 @@ p, ul {
     margin-bottom: 10px;
     padding: 0 10px;
     width: 300px;
-    height: 350px;
     border-radius: 10px;
     outline: none;
     background-color: #fff;
@@ -359,7 +356,7 @@ p, ul {
     color: #545454;
 }
 
-/*====Help====*/
+/*== Help ==*/
 .help {
     width: 100%;
     height: auto;
@@ -403,7 +400,7 @@ p, ul {
     color: #545454;
 }
 
-/*====Donation====*/
+/*== Donation ==*/
 .donation {
     height: auto;
     background-color: #f6f6f6;
@@ -477,7 +474,7 @@ p, ul {
     font-size: 18px;
 }
 
-/*====Footer====*/
+/*== Footer ==*/
 .footer {
     background: url(/img/footer__bg.jpg) center no-repeat;
     background-size: cover;
@@ -547,7 +544,7 @@ p, ul {
     text-decoration: none;
 }
 
-/*====Gallery====*/
+/*== Our pets page - Gallery ==*/
 .gallery {
     width: 100%;
     background-color: #f6f6f6;
@@ -564,7 +561,6 @@ p, ul {
 
 .gallery__title {
     padding-top: 20px;
-
     font-size: 20px;
     text-align: center;
 }
@@ -576,8 +572,7 @@ p, ul {
 
 .gallery__item {
     margin: 10px;
-    width: 270px;
-    height: 350px;
+    max-width: 270px;
     position: relative;
     border-radius: 15px;
     background-color: #fff;
@@ -601,7 +596,7 @@ p, ul {
     color: #545454;
 }
 
-/*====Modal====*/
+/*== Modal ==*/
 .modal {
     display: none;
     width: 100%;
@@ -622,7 +617,6 @@ p, ul {
 .modal__dialog {
     width: 100%;
     max-width: 975px;
-    height: 470px;
     margin: auto;
     position: relative;
     background-color: #fff;
@@ -662,17 +656,19 @@ p, ul {
 }
 
 .modal-window {
+    max-width: 1200px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .modal__preview {
-    width: 53%;
+    width: 100%;
     position: relative;
-    overflow: hidden;
 }
 
 .modal__photo {
-    height: 470px;
+    max-width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -681,7 +677,7 @@ p, ul {
 
 .modal__content {
     padding-top: 40px;
-    width: 47%;
+    max-width: 100%;
     position: relative;
 }
 
@@ -733,7 +729,7 @@ p, ul {
     padding-right: 10px;
 }
 
-/*====Medias====*/
+/*== Media ==*/
 @media (min-width: 640px){
     .container {
         padding: 0 30px;
@@ -1017,6 +1013,10 @@ p, ul {
         transform: translate(-50%, 0);
     }
 
+    .modal__dialog {
+        max-width: 500px;
+    }
+
     .help .container {
         max-width: 1200px;
     }
@@ -1096,8 +1096,9 @@ p, ul {
 
     .gallery__inner {
         margin: 0 auto;
-        width: 1270px;
+        max-width: 1270px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
